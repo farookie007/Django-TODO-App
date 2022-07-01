@@ -1,0 +1,12 @@
+<ul>
+
+    {% for object in object_list %}
+    <li><h3><center>{{ object.title }}</center></h3></li>
+    <li><p><center>{{ object.description }}</center></p></li>
+
+    <hr>
+    {% empty %}
+    <li><h3 style="color:red"><center>No Todo Entry yet!</center></h3></li>
+    {% endfor %}
+
+</ul>
